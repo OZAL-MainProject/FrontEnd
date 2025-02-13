@@ -55,7 +55,7 @@ const TravelInfoCard = () => {
         <p>Loading...</p>
       ) : (
         tourListData
-          ?.filter((i) => i.firstimage2)
+          ?.filter((i) => i.firstimage2 && i.firstimage2.trim() !== "")
           .map((i) => {
             return (
               <Link
